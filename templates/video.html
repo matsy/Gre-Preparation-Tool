@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Video</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}" />
+        <!-- Bootstrap icons-->
+        <link href="{{url_for('static', filename='bootstrap-icons.css')}}" rel="stylesheet" type="text/css"/>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{url_for('static', filename='stylesIndex.css')}}" rel="stylesheet" text="text/css"/>
+		<style>
+			.img-container {
+				text-align: center;
+			}
+			.button{
+				display: inline-block;
+			}
+		</style>
+    </head>
+    <body>
+    	<section class = "img-container">
+            <video width="650" height="330" controls>
+                <source src = "{{url_for('static', filename='web_webm_2.webm')}}" type="video/webm">
+            </video>
+            <form action="http://localhost:5000/result" method="POST">
+                <input type="hidden" name="reply" value = "Question">
+            	<input class="btn btn-outline-dark mt-auto mx-3 my-3" type="submit" value="Question"></input></div>
+            </form>
+        </section>
+    </body>
+</html>
