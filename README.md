@@ -8,7 +8,7 @@
 
 <b><h2>Web Page Flow</b></h2>
 The home screen looks as below
-<pre>                                 |<img src= Images/HomePage.jpeg width="auto" height="250">| </pre>
+                                      <pre>|<img src= Images/HomePage.jpeg width="auto" height="250">| </pre>
 
 On choosing the GRE Preparation Tool, the following web page is loaded
 <pre>                                 |<img src= Images/PrepToolHome.jpeg width="auto" height="250">| </pre>
